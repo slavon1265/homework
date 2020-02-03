@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+        У вас и у вашего друга в кармане столько денег, сколько было указано в окнах prompt. В зависимости от общей суммы ваших сбережений
+         вы можете полететь на Мальту изучать английский язык или выпить пива. С помощью условного оператора определите ваши возможности и 
+         отобразите на экране в alert.
+
+    */
+    let mineMoney = parseInt(prompt('How much money I have(ex: $1000)'));
+    let friendsMoney = parseInt(prompt('How much money my friend has(ex: $1000)'));
+    var summaryMoney = mineMoney + friendsMoney;
+
+    if (summaryMoney>=2000){
+        alert('Cool, you able to visit Malta:)');
+    }
+    if (summaryMoney < 2000 && summaryMoney >= 100 ){
+        alert('You have to earn a little more money to vist Malta, or buy a beer keg)');
+    }
+    if(summaryMoney<100){
+        alert('On this moment you can only afford to have a good evening at the bar with your friend');
+    }
+    if(summaryMoney<=0){
+        alert('You\'re bankroot:(');
+    }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Создайте две переменные: greeting и lang. Переменная greeting – пустая строка. Переменная lang может принимать три значения: 'ru', 'en', 'de' 
+        (например, из prompt). Если она имеет значение 'ru', то в переменную greeting запишите приветствие на русском языке, если имеет значение 
+        'en' – то на английском, если 'de' – на немецком. Выведите на экран приветствие в зависимости от значения переменной lang. Решите задачу 
+        через if-else и через switch-case.
+
+        */
+    let greeting = '';
+    let lang = prompt('Enter language of greeating (ru/en/de) for example: de');
+    
+    if (lang == 'de' || lang == 'en' || lang == 'ru'){
+        switch(lang){
+            case 'de': greeting = 'Hallo!'; break;
+            case 'en': greeting = 'Hello!'; break;
+            case 'ru': greeting = 'Привет!'; break;
+        }
+        alert(greeting);
+    }else{
+        alert('Please write correct language format!');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        В переменной month хранится текущий месяц (new Date()). Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).
+
+        */
+    let month = new Date;
+    let season = '';
+    month = month.getMonth();
+    
+        if (month >= 0 && month <= 1 || month == 11){ season = 'winter';}
+        if (month >= 2 && month <= 4){ season = 'spring';}
+        if (month >= 5 && month <= 7){ season = 'summer';}
+        if (month >= 8 && month <= 10){ season = 'autumn';}
+        alert(season);
+    </script>
+</body>
+</html>

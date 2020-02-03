@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Получите из prompt значение для имени пользователя. Выведите на экран приветствие. Учтите вариант, что пользователь может не ввести 
+        ничего или нажать на Отмена.
+
+        */
+    let userName = prompt('Enter your name');
+    if (userName == null){
+        alert('Nu i ne nado!');
+    }if(userName == ''){
+        alert('Please fill the field bellow');
+        userName = prompt('Enter your name');
+    }if (userName !== null && userName !== ''){
+        alert('Hello ' + userName);
+    }
+    </script>
+</body>
+</html>
